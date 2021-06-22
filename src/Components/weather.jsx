@@ -13,20 +13,8 @@ class weather extends Component{
         
         this.state={
             
-            OutputHere:'',
-            countryHere:"",
-            error:"",
-            covidByCountry:"",
-            hight:"",
-            wind:"",
-            sunrise:"",
-            low:"",
-            humidity:"",
-            sunset:"",
-            covid:'',
-            getTemp:"",
-            dis:"",
-            ChangClass:"",
+            OutputHere:'',countryHere:"",error:"",covidByCountry:"",hight:"",wind:"",sunrise:"",low:"",humidity:"",
+            sunset:"",covid:'',getTemp:"",dis:"",ChangClass:"",
             Day:"",Date:"",Month:"",item:[],currentWeather:[]
         }
     }
@@ -167,6 +155,8 @@ if(this.state.error){
 else{
 
         return(
+            <>
+            <div className="background-image"></div>
             <motion.div
             initial="out"
             animate='in'
@@ -179,9 +169,9 @@ else{
  
   whileTap={{ scale: 0.9 }}
   layout transition={{ duration: 0.4 }}>
-            <div>
+       
            
-            <div className="containter m-auto">
+            <div className="containter weather m-auto">
                
                 
                 <div className="row">
@@ -195,10 +185,10 @@ else{
                             <p id="todays_data" style={{marginLeft:"5px"}}  name='Date'>{this.state.Month}</p>
                         </div>
                         <div className="row">
-                            <div className="col-md-3">
+                            <div className="col temp_status">
                                 <p id="temp_status" style={{fontSize:"100px"}} ><i className={this.state.ChangClass}  aria-hidden="true"></i></p>
                             </div>
-                            <div className="col-md-auto" style={{marginLeft:"10px"}}>
+                            <div className="col " style={{marginLeft:"10px"}}>
                                 <div className="row">
                                     <p id="temp" name="getTemp" style={{fontSize:"30px",marginLeft:"20px",marginTop:"25px"}} value={this.getTemp}><span id="temp_real_val">{this.state.getTemp}</span><sup>o</sup>C </p>   
                                 </div>
@@ -209,8 +199,8 @@ else{
                         </div>
                     </div>
                     
-                    <div className="col-md-auto " style={{backgroundColor:"rgb(255, 255, 255,0.2)",padding:"0px"}}>
-                        <div className="row">
+                    <div className="col-md-auto others" style={{backgroundColor:"rgb(255, 255, 255,0.2)",padding:"0px"}}>
+                        <div className="row" style={{marginTop:"20px",marginLeft:"15px"}}>
                             <div className="col-md-5" >
                                 <p style={{fontSize:"40px",marginBottom:"0px"}}>{this.state.hight}<sup>o</sup>C </p>
                                 <p style={{fontSize:"20px",marginLeft:"30px"}}>Highest</p>
@@ -222,7 +212,7 @@ else{
                             
                         </div>
                         
-                        <div className="row" style={{marginTop:"10px"}}>
+                        <div className="row" style={{marginTop:"80px",marginLeft:"20px"}}>
                         <div className="col-md-5" >
                                 <p style={{fontSize:"40px",marginBottom:"0px"}}>{this.state.low}<sup>o</sup>C</p>
                                 <p style={{fontSize:"20px",marginLeft:"35px"}}>Lowest</p>
@@ -236,25 +226,28 @@ else{
 
                     </div>
                     <div className="col-md-auto offset-md-1" style={{backgroundColor:"rgb(255, 255, 255,0.2)"}}>
-                    <div className="row">
-                            <p style={{fontSize:"40px"}}>Total Confirmed</p>
+                        <div className="row">
+                            <h5 style={{fontSize:"40px",fontWeight:"bold"}}>Covid-19 Updates</h5>
                         </div>
                         <div className="row">
-                            <p style={{fontSize:"20px"}}>{this.state.covidByCountry.TotalConfirmed}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewConfirmed})</span></p>
+                            <p style={{fontSize:"30px",margin:"0",marginLeft:"60px"}}>Total Confirmed</p>
                         </div>
                         <div className="row">
-                            <p style={{fontSize:"40px"}}>Total Deaths</p>
+                            <p style={{fontSize:"20px",marginLeft:"80px"}}>{this.state.covidByCountry.TotalConfirmed}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewConfirmed})</span></p>
+                        </div>
+                        <div className="row">
+                            <p style={{fontSize:"30px",margin:"0",marginLeft:"60px"}}>Total Deaths</p>
                         </div>
                      
                         <div className="row">
-                            <p style={{fontSize:"20px"}}>{this.state.covidByCountry.TotalDeaths}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewDeaths})</span></p>
+                            <p style={{fontSize:"20px",marginLeft:"80px"}}>{this.state.covidByCountry.TotalDeaths}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewDeaths})</span></p>
                         </div>
                         <div className="row">
-                            <p style={{fontSize:"40px"}}>Total Recovered</p>
+                            <p style={{fontSize:"30px",margin:"0",marginLeft:"60px"}}>Total Recovered</p>
                         </div>
                         
                         <div className="row">
-                            <p style={{fontSize:"20px"}}>{this.state.covidByCountry.TotalRecovered}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewRecovered})</span></p>
+                            <p style={{fontSize:"20px",marginLeft:"80px"}}>{this.state.covidByCountry.TotalRecovered}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewRecovered})</span></p>
                         </div>
                         
                     </div>
@@ -289,10 +282,11 @@ else{
             
             
         </div>
-    </div>
+    
 
      
             </motion.div>
+            </>
         );
     }
 }
