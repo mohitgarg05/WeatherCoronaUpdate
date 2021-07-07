@@ -114,12 +114,12 @@ class weather extends Component{
                 {this.setState({ChangClass: "fa fa-cloud" })}
             else if(res.data.weather[0].main=== "Clear")
             {
-                this.setState({ChangClass: "fas fa-sun" })
+                this.setState({ChangClass: "fa fa-sun" })
               
             }
             else if(res.data.weather[0].main=== "Rain")
             {
-                this.setState({ChangClass: "fas fa-cloud-rain" })
+                this.setState({ChangClass: "fa fa-cloud-rain" })
               
             }
             else
