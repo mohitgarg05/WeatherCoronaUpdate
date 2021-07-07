@@ -20,11 +20,6 @@ class weather extends Component{
     }
 
     
-
-    componentDidMount(){
-        const CityName = this.props.match.params.cityname;
-        console.log(CityName);
-    }
     
     componentDidMount(){
         const CityName = this.props.match.params.cityname;
@@ -111,20 +106,20 @@ class weather extends Component{
 
             
            if( res.data.weather[0].main=== "Clouds")
-                {this.setState({ChangClass: "fa fa-cloud" })}
+                {this.setState({ChangClass: "fas fa-cloud" })}
             else if(res.data.weather[0].main=== "Clear")
             {
-                this.setState({ChangClass: "fa fa-sun" })
+                this.setState({ChangClass: "fas fa-sun" })
               
             }
             else if(res.data.weather[0].main=== "Rain")
             {
-                this.setState({ChangClass: "fa fa-cloud-rain" })
+                this.setState({ChangClass: "fas fa-cloud-rain" })
               
             }
             else
                 {
-                    this.setState({ChangClass: "fa fa-cloud" })
+                    this.setState({ChangClass: "fas fa-cloud" })
                 }
 
 

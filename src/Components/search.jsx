@@ -20,7 +20,7 @@ export default  class Search extends Component{
 
 
     render(){
-        const {cityname} = this.state
+       
         return(
             <>
             <div className="background-image"></div>
