@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 import axios from 'axios'
 import {motion} from 'framer-motion'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCloud, faSun } from '@fortawesome/fontawesome-free-solid'
 import {animateOne,transition} from '../Animations/searchAnimation'
 import { withRouter } from "react-router";
 
@@ -106,10 +107,10 @@ class weather extends Component{
 
             
            if( res.data.weather[0].main=== "Clouds")
-                {this.setState({ChangClass: "fas fa-cloud" })}
+                {this.setState({ChangClass: faCloud })}
             else if(res.data.weather[0].main=== "Clear")
             {
-                this.setState({ChangClass: "fas fa-sun" })
+                this.setState({ChangClass: faSun })
               
             }
             else if(res.data.weather[0].main=== "Rain")
@@ -181,7 +182,7 @@ else{
                         </div>
                         <div className="row">
                             <div className="col temp_status">
-                                <p id="temp_status" style={{fontSize:"100px"}} ><i className={this.state.ChangClass}  aria-hidden="true"></i></p>
+                                <p id="temp_status" style={{fontSize:"100px"}} ><FontAwesomeIcon icon={ this.state.ChangClass }/></p>
                             </div>
                             <div className="col " style={{marginLeft:"10px"}}>
                                 <div className="row">
