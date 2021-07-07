@@ -3,7 +3,12 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import {motion} from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloud, faSun } from '@fortawesome/fontawesome-free-solid'
+
+import {
+    faCloud,
+   faCloudRain,
+    faSun,faFrown 
+  } from '@fortawesome/free-solid-svg-icons';
 import {animateOne,transition} from '../Animations/searchAnimation'
 import { withRouter } from "react-router";
 
@@ -115,12 +120,12 @@ class weather extends Component{
             }
             else if(res.data.weather[0].main=== "Rain")
             {
-                this.setState({ChangClass: "fas fa-cloud-rain" })
+                this.setState({ChangClass: faCloudRain })
               
             }
             else
                 {
-                    this.setState({ChangClass: "fas fa-cloud" })
+                    this.setState({ChangClass: faCloud })
                 }
 
 
@@ -128,7 +133,7 @@ class weather extends Component{
         
         })
         .catch(err =>{
-            this.setState({error: "Oops! You entered wrong city name 😿"})
+            this.setState({error: "Oops! You entered wrong city name "})
         })
 
     }
@@ -138,14 +143,17 @@ class weather extends Component{
         const {item,covid} = this.state
 
 if(this.state.error){
-    return(
+    return(<>
+        <div className="background-image">
         <div className="container m-auto" >
             <div className='row'style={{marginTop:"250px",backgroundColor:"rgb(255, 255, 255,0.2)",height:"7em"}}>
                 <div className='col-md-auto' >
-                    <p style={{textAlign:"center" , fontSize:"30px",marginTop:"20px"}}> {this.state.error} </p>
+                    <p style={{ marginLeft:"300px", fontSize:"30px",marginTop:"20px"}}><FontAwesomeIcon icon={faFrown} /> {this.state.error}<FontAwesomeIcon icon={faFrown} /> </p>
                 </div>
             </div>
         </div>
+        </div>
+        </>
     );
 }
 else{
