@@ -1,0 +1,538 @@
+@media (min-width : 1200px)  {
+   /* All good */
+   .weather-input-inner{
+       width: 1000px;
+ }
+}
+@media  (max-width : 1324px)  {
+    /* All good */
+    .others{
+        width: 60%;
+    }
+    .corona{
+        width: 60%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+   }
+@media (min-width : 768px)  and (max-width : 1039px) {
+    .others{
+        width: 100%;
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+
+    .corona h5{
+        margin-left: 240px;
+    }
+    .corona p{
+        margin-left: 240px;
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+
+
+} 
+
+@media (min-width : 551px)  and (max-width : 767px){
+    .others{
+        width: 100%;
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+    
+    .corona h5{
+        font-size: 35px !important;
+        margin-left: 170px;
+    }
+    .corona p{
+        margin-left: 140px;
+     
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+    .temp-details .name-status {
+
+        width: 190px;
+    }
+    
+    
+   
+   
+
+}
+
+@media (min-width : 425px)  and ( max-width : 550px) {
+    .others{
+        width: 100%;
+
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+    
+    .corona h5{
+        font-size: 40px !important;
+        margin-left: 90px;
+    }
+    .corona p{
+        margin-left: 90px;
+     
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+    
+    .others .higest-wind .higest #data{
+
+
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .higest #heading{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .others .higest-wind .wind #data2{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .wind #heading2{
+        font-size: 15px;
+        margin-left: 45px;
+    }
+    
+    .others .lowestt-humidity .lowest #data3{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .others .lowestt-humidity .lowest #heading3{
+        font-size: 15px;
+        margin-left: 35px;
+    }
+    .others .lowestt-humidity .humidity #data4{
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-left: 30px;
+    }
+    .others .lowestt-humidity .humidity #heading4{
+        font-size: 15px !important;
+    
+        margin-left: 30px;
+    }
+    
+}
+
+@media (min-width : 340px)  and (max-width : 424px) {
+    .others{
+        width: 100%;
+
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+    .details .temp-details .temp-icon-status #temp_status{
+        padding-top: 10px;
+        font-size: 50px;
+      
+    }
+    .details .temp-details .temp-details-content .temp-status #temp{
+        
+        font-size: 20px;
+    }
+    .details .temp-details .temp-details-content .name-status #dis{
+        font-size: 15px;
+    }
+    
+    .corona h5{
+        font-size: 30px !important;
+        margin-left: 40px;
+    }
+    .corona p{
+       text-align: center;
+     
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+    
+    .others .higest-wind .higest #data{
+
+
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .higest #heading{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .others .higest-wind .wind #data2{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .wind #heading2{
+        font-size: 15px;
+        margin-left: 45px;
+    }
+    
+    .others .lowestt-humidity .lowest #data3{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .others .lowestt-humidity .lowest #heading3{
+        font-size: 15px;
+        margin-left: 35px;
+    }
+    .others .lowestt-humidity .humidity #data4{
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-left: 30px;
+    }
+    .others .lowestt-humidity .humidity #heading4{
+        font-size: 15px !important;
+    
+        margin-left: 30px;
+    }
+    
+}
+@media (min-width : 319px)  and (max-width : 341px) {
+    .others{
+        width: 100%;
+
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+    .details .temp-details .temp-icon-status #temp_status{
+        padding-top: 10px;
+        font-size: 50px;
+      
+    }
+    .details .temp-details .temp-details-content .temp-status #temp{
+        
+        font-size: 20px;
+    }
+    .details .temp-details .temp-details-content .name-status #dis{
+        font-size: 15px;
+    }
+    
+    .corona h5{
+        font-size: 25px !important;
+        margin-left: 40px;
+    }
+    .corona p{
+        font-size: 20px !important;
+       text-align: center;
+     
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+    
+    .others .higest-wind .higest #data{
+
+
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .higest #heading{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    .others .higest-wind .wind #data2{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .wind #heading2{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    
+    .others .lowestt-humidity .lowest #data3{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .lowestt-humidity .lowest #heading3{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    .others .lowestt-humidity .humidity #data4{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+    .others .lowestt-humidity .humidity #heading4{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    
+    
+}
+@media (min-width : 283px)  and (max-width : 318px) {
+    .others{
+        width: 100%;
+
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+    .details .temp-details .temp-icon-status{
+        width: 50px;
+    }
+    .details .temp-details .temp-icon-status #temp_status{
+        padding-top: 22px;
+        font-size: 40px;
+      
+    }
+    .details .temp-details .temp-details-content .temp-status #temp{
+        
+        font-size: 20px;
+    }
+    .details .temp-details .temp-details-content .name-status #dis{
+        font-size: 15px;
+    }
+    
+    .corona h5{
+        font-size: 25px !important;
+        margin-left: 40px;
+    }
+    .corona p{
+        font-size: 20px !important;
+       text-align: center;
+     
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+    
+    .others .higest-wind .higest #data{
+
+
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .higest #heading{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    .others .higest-wind .wind #data2{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+    .others .higest-wind .wind #heading2{
+        font-size: 12px !important;
+        margin-left: 46px;
+    }
+    
+    .others .lowestt-humidity .lowest #data3{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .lowestt-humidity .lowest #heading3{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    .others .lowestt-humidity .humidity #data4{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+    .others .lowestt-humidity .humidity #heading4{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    
+}
+
+@media (min-width : 250px)  and (max-width : 282px) {
+   
+    .others{
+        width: 100%;
+
+    }
+    .corona{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+    .details .temp-details .temp-icon-status{
+        width: 50px;
+    }
+    .details .temp-details .temp-icon-status #temp_status{
+        padding-top: 22px;
+        font-size: 40px;
+      
+    }
+    .details .temp-details .temp-details-content .temp-status #temp{
+        
+        font-size: 20px;
+    }
+    .details .temp-details .temp-details-content .name-status #dis{
+        font-size: 15px;
+    }
+    
+    .corona h5{
+        font-size: 20px !important;
+        margin-left: 40px;
+    }
+    .corona p{
+        font-size: 15px !important;
+       text-align: center;
+     
+    }
+    .corono .covid-confirmed-data p{
+        font-size: 15px !important;
+    
+    }
+    .forcast .forcast-content #temp-forcast{
+        font-size: 20px !important;
+    }
+    .forcast .forcast-content #date-forcast,#time-forcast{
+          font-size: 15px !important;
+    }
+    
+    .others .higest-wind .higest #data{
+
+
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .higest-wind .higest #heading{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    .others .higest-wind .wind #data2{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+    .others .higest-wind .wind #heading2{
+        font-size: 12px !important;
+        margin-left: 46px;
+    }
+    
+    .others .lowestt-humidity .lowest #data3{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+    .others .lowestt-humidity .lowest #heading3{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+    .others .lowestt-humidity .humidity #data4{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+    .others .lowestt-humidity .humidity #heading4{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width : 992px)  and (max-width : 1199px) {
+    .weather-input-inner{
+        width: 1000px;
+        
+    }
+    
+}
+
+@media (min-width : 768px) and (max-width : 991px) {
+    .weather-input-inner {
+        width: 1000px;
+        
+    }
+}
+@media (min-width : 577px) and  (max-width : 767px) {
+    .weather-input-inner {
+        width: 800px;
+        
+    }
+    .weather-heading h2{
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+    
+}
+@media (min-width : 293px) and  (max-width : 576px){
+ 
+    
+    .weather-heading h2{
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width : 292px){
+    .weather-input-inner {
+        width: 200px;
+        
+    }
+    .weather-heading h2{
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+}
+

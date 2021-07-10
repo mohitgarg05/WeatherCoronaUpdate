@@ -15,14 +15,29 @@
    
 
     background-image: url("./images/bg1.jpg"); 
-   
-     display: block;
-     width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+     width: 100%;
+   
+    position: fixed;
+    height: 100%;
     
-    position: absolute;
-    min-height: 750px;
-    z-index: -1;
+  }
+  .background-image1 {
+    
+    background-image: url("./images/bg1.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+     width: 100%;
+       
+    position: sticky;
+    height: 100%;
+   
+    
   }
   
 
@@ -37,53 +52,147 @@
     overflow-x: auto;
 }
 
- 
-@media only screen and (max-width: 600px){
+
+
+
+/* For search */
+
+.weather-heading h2{
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 150px;
+
+}
+.weather-input{
+    margin-top: 10px;
+  
+}
+.weather-input-inner{
+   justify-content: center;
+}
+
+.weather-input-content{
+    padding: 0;
+}
+
+.weather-input {
+    display: flex;
+    justify-content: center;
+}
+
+/* For weather page */
+
+
+.details #city_name{
+
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.details .date-details #todays_date,#todays_month{
+    margin-left: 5px;
+}
+.temp-details .temp-icon-status #temp_status{
+    font-size: 100px;
+}
+
+.temp-details .temp-status #temp{
+  
+
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 19px;
+}
+.temp-details .name-status #dis{
+
+    font-size: 20px;
+    margin-left: 30px;
+    text-transform: capitalize;
     
-    #bg-text {
-        width: 70%;
+}
 
-      }
-    .weather{
-          overflow-x: auto;
-      }
-    .temp_status{
-        width: 00%;
-    }
-    .other{
-        max-width: 200px;
-    }
-   
-      
-      
-   
-}
-@media only screen and (max-width: 800px){
-    #bg-text h2{
-        margin-left: 70px;
-    }
-    #bg-text {
-        margin-left: 20px;
-        width: 80%;
-      }
-    *{
-          font-weight: 100;
 
-      }
-      
+.others{
+
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 0;
+    justify-content: center;
 }
-@media only screen and (max-width: 1350px){
-    .background-image{
-        min-height: 1000px;
-    }
+
+.others .higest-wind{
+
+    margin-left: 15px;
+    margin-top: 20px;
 }
-@media only screen and (max-width: 1050px){
-    .background-image{
-        min-height: 1100px;
-    }
+.others .higest-wind .higest #data{
+
+
+    font-size: 40px;
+    margin-bottom: 0px;
 }
-@media only screen and (max-width: 800px){
-    .background-image{
-        min-height: 1500px;
-    }
+.others .higest-wind .higest #heading{
+    font-size: 20px;
+    margin-left: 30px;
+}
+.others .higest-wind .wind #data2{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.others .higest-wind .wind #heading2{
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.others .lowestt-humidity{
+
+    margin-left: 20px;
+    margin-top: 80px ;
+}
+.others .lowestt-humidity .lowest #data3{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.others .lowestt-humidity .lowest #heading3{
+    font-size: 20px;
+    margin-left: 35px;
+}
+.others .lowestt-humidity .humidity #data4{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+.others .lowestt-humidity .humidity #heading4{
+    font-size: 20px;
+
+    margin-left: 30px;
+}
+.corona{
+    margin-left: 100px;
+}
+
+.corona .covid-confirmed,.covid-recovered,.covid-death{
+   
+    font-size: 30px;
+    margin-left: 55px;
+    
+}
+
+.corona .covid-confirmed-data,.covid-recovered-data,.covid-death-data{
+
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.forcast .forcast-content #date-forcast,#time-forcast{
+    font-size: 20px;
+    
+}
+
+
+.forcast .forcast-content #temp-forcast{
+    font-size: 40px;
+    margin-bottom: 0;
+    
 }

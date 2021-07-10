@@ -3,7 +3,7 @@ import './App.css';
 import {Route,Switch} from 'react-router-dom';
 import Search from './Components/search'
 import {AnimatePresence} from 'framer-motion'
-
+import "./responsive.css"
 import Weather from './Components/weather'
 
 

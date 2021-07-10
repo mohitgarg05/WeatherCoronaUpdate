@@ -23,7 +23,7 @@ export default  class Search extends Component{
        
         return(
             <>
-            <div className="background-image"></div>
+            <div className="background-image">
         <motion.div
             initial="out"
             animate='in'
@@ -37,27 +37,29 @@ export default  class Search extends Component{
         <div id="bg-text">
 
             <div className="row" >
-                <div className="col m-auto">
-                    <h2 style={{textAlign:"center",letterSpacing:"6px",textTransform:"uppercase",marginTop:"150px"}}>Weather App</h2>
+                <div className="col  weather-heading">
+                    <h2>Weather App</h2>
                 </div>
             </div>
 
-
-            <div className="row" style={{marginLeft:"80px",marginTop:"30px",padding:"0px"}} >
-                <div className="col-md-3 offset-md-4 offset-sm-0"  style={{padding:"0px"}}>
-                    <input autoComplete='off' type="search" id="form" id="cityname" name="cityname" value={this.cityname} onChange={this.ev} class="form-control" /> 
+            <div className="container weather-input" >
+                <div className="row weather-input-inner ">
+                    <div className="col-md-5 col-sm-6 col-auto  weather-input-content">
+                        <input autoComplete='off' type="search"  id="cityname" name="cityname" value={this.cityname} onChange={this.ev} class="form-control" /> 
+                    </div>
+                   
+                        <a href={`/${this.state.cityname}`}>
+                            <button type="button" onClick={this.getWeather}  class="btn btn-primary ">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </a>
+                
+                            
                 </div>
-                <div className="col-sl-1" style={{padding:"0px"}} >
-                    <a href={`/${this.state.cityname}`}>
-                        <button type="button" onClick={this.getWeather}    class="btn btn-primary ">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </a>
-                </div>
-                        
             </div>
         </div>
         </motion.div>
+        </div>
         </>);
     }
 

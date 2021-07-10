@@ -160,7 +160,7 @@ else{
 
         return(
             <>
-            <div className="background-image"></div>
+            <div className="background-image1">
             <motion.div
             initial="out"
             animate='in'
@@ -178,82 +178,83 @@ else{
             <div className="containter weather m-auto">
                
                 
-                <div className="row">
-                    <div className="col-md-4">
-                        <div className="row">
-                             <p id="city_name" style={{fontSize:"60px",margin:"0",padding:"0"}} name="OutputHere" value={this.OutputHere}> {this.state.OutputHere},{this.state.countryHere}</p>
+                <div className="row weather-box">
+                    <div className="col-md-auto details"  >
+                        <div className="row city-details">
+                             <p id="city_name"  name="OutputHere" value={this.OutputHere}> {this.state.OutputHere},{this.state.countryHere}</p>
                         </div>
-                        <div className='row' style={{display:"flex"}}>
+                        <div className='row date-details'>
                             <p id="day" name="Day" >{this.state.Day}</p>
-                            <p id="todays_data" style={{marginLeft:"5px"}}  name='Date'>{this.state.Date}</p>
-                            <p id="todays_data" style={{marginLeft:"5px"}}  name='Date'>{this.state.Month}</p>
+                            <p id="todays_date"  name='Date'>{this.state.Date}</p>
+                            <p id="todays_month"  name='Date'>{this.state.Month}</p>
                         </div>
-                        <div className="row">
-                            <div className="col temp_status">
-                                <p id="temp_status" style={{fontSize:"100px"}} ><FontAwesomeIcon icon={ this.state.ChangClass }/></p>
+                        <div className="row temp-details"  >
+                            <div className="col-md-auto col-sm-3 col-auto temp-icon-status"   >
+                                <p id="temp_status" style={{margin:"0" }} ><FontAwesomeIcon icon={ this.state.ChangClass }/></p>
                             </div>
-                            <div className="col " style={{marginLeft:"10px"}}>
-                                <div className="row">
-                                    <p id="temp" name="getTemp" style={{fontSize:"30px",marginLeft:"20px",marginTop:"25px"}} value={this.getTemp}><span id="temp_real_val">{this.state.getTemp}</span><sup>o</sup>C </p>   
+                            <div className="col-md-auto col-sm-4 col-auto temp-details-content  " style={{marginLeft:"20px"}}   >
+                                <div className="row temp-status">
+                                    <p id="temp" name="getTemp" value={this.getTemp}><span id="temp_real_val">{this.state.getTemp}</span><sup>o</sup>C </p>   
                                 </div>
-                                <div className="row">
-                                    <p id='dis' name='dis' style={{fontSize:"20px",marginLeft:"20px",textTransform:"capitalize"}}>{this.state.dis}</p>
+                                <div className="row name-status">
+                                    <p id='dis' name='dis'>{this.state.dis}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div className="col-md-auto others" style={{backgroundColor:"rgb(255, 255, 255,0.2)",padding:"0px"}}>
-                        <div className="row" style={{marginTop:"20px",marginLeft:"15px"}}>
-                            <div className="col-md-5" >
-                                <p style={{fontSize:"40px",marginBottom:"0px"}}>{this.state.hight}<sup>o</sup>C </p>
-                                <p style={{fontSize:"20px",marginLeft:"30px"}}>Highest</p>
+                    <div className="col-auto others">
+                        <div className="row higest-wind" >
+                            <div className="col-md-5 col-sm-6 col-auto higest" >
+                                <p  id="data">{this.state.hight}<sup>o</sup>C </p>
+                                <p  id="heading">Highest</p>
                             </div>
-                            <div className="col-md-5 " style={{marginLeft:"20px"}} >
-                                <p style={{fontSize:"40px",marginBottom:"0px"}}>{this.state.wind}mph</p>
-                                <p style={{fontSize:"20px",marginLeft:"45px"}}>Wind</p>
+                            <div className="col-md-5 col-sm-3 col-auto wind" style={{marginLeft:"20px"}} >
+                                <p  id="data2">{this.state.wind}mph</p>
+                                <p  id="heading2">Wind</p>
                             </div>
                             
                         </div>
                         
-                        <div className="row" style={{marginTop:"80px",marginLeft:"20px"}}>
-                        <div className="col-md-5" >
-                                <p style={{fontSize:"40px",marginBottom:"0px"}}>{this.state.low}<sup>o</sup>C</p>
-                                <p style={{fontSize:"20px",marginLeft:"35px"}}>Lowest</p>
+                        <div className="row lowestt-humidity" >
+                        <div className="col-md-5 col-sm-6 col-auto lowest"  >
+                                <p id="data3">{this.state.low}<sup>o</sup>C</p>
+                                <p  id="heading3">Lowest</p>
                             </div>
-                            <div className="col-md-5 " style={{marginLeft:"20px"}}>
-                                <p style={{fontSize:"40px",marginBottom:"0px",marginLeft:"30px"}}>{this.state.humidity}%</p>
-                                <p style={{fontSize:"20px",marginLeft:"30px"}}>Humidity</p>
+                            <div className="col-md-5 col-sm-3 col-auto humidity " style={{marginLeft:"20px"}}>
+                                <p id="data4" >{this.state.humidity}%</p>
+                                <p id="heading4"style={{fontSize:"20px",marginLeft:"30px"}}>Humidity</p>
                             </div>
                             
                         </div>
 
                     </div>
-                    <div className="col-md-auto offset-md-1" style={{backgroundColor:"rgb(255, 255, 255,0.2)"}}>
-                        <div className="row">
+                    <div className="col-md-auto  corona" style={{backgroundColor:"rgb(255, 255, 255,0.2)"  }}>
+      
+                        <div className="row covid-heading" >
                             <h5 style={{fontSize:"40px",fontWeight:"bold"}}>Covid-19 Updates</h5>
                         </div>
-                        <div className="row">
-                            <p style={{fontSize:"30px",margin:"0",marginLeft:"60px"}}>Total Confirmed</p>
+                        <div className="row covid-confirmed">
+                            <p >Total Confirmed</p>
                         </div>
-                        <div className="row">
-                            <p style={{fontSize:"20px",marginLeft:"80px"}}>{this.state.covidByCountry.TotalConfirmed}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewConfirmed})</span></p>
+                        <div className="row covid-confirmed-data">
+                            <p >{this.state.covidByCountry.TotalConfirmed}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewConfirmed})</span></p>
                         </div>
-                        <div className="row">
-                            <p style={{fontSize:"30px",margin:"0",marginLeft:"60px"}}>Total Deaths</p>
+                        <div className="row covid-recovered">
+                            <p >Total Recovered</p>
+                        </div>
+                        
+                        <div className="row covid-recovered-data">
+                            <p >{this.state.covidByCountry.TotalRecovered}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewRecovered})</span></p>
+                        </div>
+                        <div className="row covid-death">
+                            <p >Total Deaths</p>
                         </div>
                      
-                        <div className="row">
-                            <p style={{fontSize:"20px",marginLeft:"80px"}}>{this.state.covidByCountry.TotalDeaths}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewDeaths})</span></p>
+                        <div className="row covid-death-data">
+                            <p >{this.state.covidByCountry.TotalDeaths}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewDeaths})</span></p>
                         </div>
-                        <div className="row">
-                            <p style={{fontSize:"30px",margin:"0",marginLeft:"60px"}}>Total Recovered</p>
-                        </div>
-                        
-                        <div className="row">
-                            <p style={{fontSize:"20px",marginLeft:"80px"}}>{this.state.covidByCountry.TotalRecovered}<span style={{fontSize:"13px"}}>(<i class="fa fa-arrow-up"></i>{this.state.covidByCountry.NewRecovered})</span></p>
-                        </div>
-                        
+                     
                     </div>
 
                    
@@ -261,16 +262,16 @@ else{
                
 
                 
-                <div className="row" style={{marginTop:"50px"}}>
+                <div className="row forcast-box" style={{marginTop:"50px"}}>
                    
                         <div className="forcast" >
                             {item.map((items)=>( 
-                                <div className="col-md-2 " style={{marginLeft:"10px",borderRadius:"5px",backgroundColor:"rgb(255, 255, 255,0.2)"}}>
-                                    <p style={{fontSize:"26px"}}>{items.dt_txt.slice(5,10)}</p>
-                                    <p style={{fontSize:"26px"}}>{items.dt_txt.slice(11,16)}</p>
+                                <div className="col-md-2 forcast-content " style={{marginLeft:"10px",borderRadius:"5px",backgroundColor:"rgb(255, 255, 255,0.2)"}}>
+                                    <p  id="date-forcast">{items.dt_txt.slice(5,10)}</p>
+                                    <p id="time-forcast">{items.dt_txt.slice(11,16)}</p>
 
-                                    <p style={{fontSize:"50px",marginBottom:"0"}}>{items.main.temp}<sup>o</sup>C</p>
-                                    <p><img src={`http://openweathermap.org/img/w/${items.weather[0].icon}.png`}></img></p>
+                                    <p  id="temp-forcast">{items.main.temp}<sup>o</sup>C</p>
+                                    <p id="icon-forcast"><img src={`http://openweathermap.org/img/w/${items.weather[0].icon}.png`}></img></p>
                                                        
                                     
                                  </div>
@@ -278,10 +279,11 @@ else{
                                
                             ))}
                         </div>
+
                     
                 </div>
 
-
+                                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
            
             
             
@@ -290,6 +292,7 @@ else{
 
      
             </motion.div>
+            </div>
             </>
         );
     }
